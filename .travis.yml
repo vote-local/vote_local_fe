@@ -1,9 +1,4 @@
 language: ruby
-rvm:
-- 2.0.0
-- 1.9.3
-- jruby-19mode
-- rbx-2
 rbenv:
 - 2.5.3
 addons:
@@ -14,6 +9,6 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure:
+    secure: erS8UzwqePFg5F/2WU+axiG6PRhhjSt3nGn5HxyVtRoKUTFNkPYhA3Dx+tHl0vDtHmlvnO1TRP1HhbXyZdgaqBT/j4cjoJcLoYro3yceg26Bv577axZUVrYfWw/8MD/QEjK2ACNwwQ+AmNW3KzasY4B3jl8X8QjDvAWQJZ68w4WaRGYn3dWWfV48YNlL6woETYYJSp2dzefqjk07X1+pbzTYOm2KVBOvEgdGEZHopuTyPjhGwXSrqYAeiQAZ+EKtbtSnIm6Tndy5RoPf7J2kBfxySFLylc4AiotJNi9yIDJNEJbqxM3GuyyQ4fL0LOQFahBghcZYx9ZfvYdYJQiJ0T1Em1ug77n10IFE55JpJn+oQ/EtuIwrGZbvofy8B6RXNHFgwAY0YMIUUqiShaxR5hJPJIp0G21//jMyiZajfqOrDdlfyxqgJOJ0Mgujq4rggosV4Se4HxOVa8rZyEvu09zvGJ/8gxT8qHcmC45Rz+ErY6bmy/ITr6Q2KnhkOdphQo3XC5mGPffm9dQfvg1MOuSWCVsA0IZLx6auKO4eF9ousKZGJMgzocz9vMLyX4BVF+Jijmv428hQRAFsgJx36CyHESrMoBDMVNwumoMAb+aeAO5Oi+YtxETX0bu7eiucDYcaArxE3o9fDUsTUMcDO1xUty4cyRWM+ABVartAoHM=
   app:
   run: rails db:migrate
