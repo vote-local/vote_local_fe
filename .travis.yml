@@ -4,16 +4,14 @@ rbenv:
 addons:
   postgresql: 9.6
 script:
-- gem install bundler:2.1.4
 - bundle exec rails db:{create,migrate} RAILS_ENV=test
 - bundle exec rspec
 deploy:
   provider: heroku
   api_key:
-    secure: erS8UzwqePFg5F/2WU+axiG6PRhhjSt3nGn5HxyVtRoKUTFNkPYhA3Dx+tHl0vDtHmlvnO1TRP1HhbXyZdgaqBT/j4cjoJcLoYro3yceg26Bv577axZUVrYfWw/8MD/QEjK2ACNwwQ+AmNW3KzasY4B3jl8X8QjDvAWQJZ68w4WaRGYn3dWWfV48YNlL6woETYYJSp2dzefqjk07X1+pbzTYOm2KVBOvEgdGEZHopuTyPjhGwXSrqYAeiQAZ+EKtbtSnIm6Tndy5RoPf7J2kBfxySFLylc4AiotJNi9yIDJNEJbqxM3GuyyQ4fL0LOQFahBghcZYx9ZfvYdYJQiJ0T1Em1ug77n10IFE55JpJn+oQ/EtuIwrGZbvofy8B6RXNHFgwAY0YMIUUqiShaxR5hJPJIp0G21//jMyiZajfqOrDdlfyxqgJOJ0Mgujq4rggosV4Se4HxOVa8rZyEvu09zvGJ/8gxT8qHcmC45Rz+ErY6bmy/ITr6Q2KnhkOdphQo3XC5mGPffm9dQfvg1MOuSWCVsA0IZLx6auKO4eF9ousKZGJMgzocz9vMLyX4BVF+Jijmv428hQRAFsgJx36CyHESrMoBDMVNwumoMAb+aeAO5Oi+YtxETX0bu7eiucDYcaArxE3o9fDUsTUMcDO1xUty4cyRWM+ABVartAoHM=
-  app:
-  run: rails db:migrate
+    secure: KXlLcOUiluFmegz/d/PPT00pSO0YnHxVNQLknciGBxf6i9836PLZXAF8XCu8GIUTEs2z8SyDz3GN4DDg0YESCxPYKyQ52XC0OqSYx7OLpxk2+t4Iq2rjqrCiY/TP/sdF3qQ/CtcgiA46mvJ9BOcR3XkzxbHtpNgpGtyaDm1EHEa0nHfcaej8QQzQTRtwFxgez0hVm6fTkon5aKlFSXUxQGQNyP+aizVEnOz/cohBtn04+KXQCdcwBBmo+QSCD4dA1u17zB1zKiXQRFdsBHywrxCK3Ctb414JzaB7akw1455yFyZFl9KkmVQihsv2TYRibtZi82JAHb/3M//hmtygFatCI82ohjvndd3SaieWp0N1pAjKEHKRhcFlS3m+Gcmny3eje+uZV+kFsdfy/6obBK6XDtmoEGityl9SNcw5UGMSQEA5SO9bGg9suEX8fpT/g0/+/UxSaVy49PMD23wbVL6s6Al6ASPL6CXCs+iPpfnTl86kEURdCX/wRUe6jQKIBcensZ0EwV2l2EHQnN2VKo+20ft7ceZ2cjsX0jB342vhFDGhP2o3ZOsT+VwG2kNl7hWd5g1vAvPZPigOlF4XjH73C/tAL2J+XlBlJhhTODZbnlUhBXhgP4NB2b2Zg3/LmhJqieBen1gI+YsF9iuy+QEjP6HSWS/o3A4OYmCoiFg=
+  app: vote-local-fe
   on:
     repo: vote-local/vote_local_fe
     branch: main
-    skip_cleanup: true
+  skip_cleanup: 'true'
