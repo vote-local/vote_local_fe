@@ -1,0 +1,13 @@
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/json-2.5.1/ext/json
+/Users/keeganoshea/.rbenv/versions/2.5.3/bin/ruby -I /Users/keeganoshea/.rbenv/versions/2.5.3/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210601-23586-12patb2.rb extconf.rb
+creating Makefile
+
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/json-2.5.1/ext/json
+make DESTDIR\= clean
+
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/json-2.5.1/ext/json
+make DESTDIR\=
+make: Nothing to be done for `all'.
+
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/json-2.5.1/ext/json
+make DESTDIR\= install
