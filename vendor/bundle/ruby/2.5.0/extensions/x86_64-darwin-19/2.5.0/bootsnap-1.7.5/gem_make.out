@@ -1,0 +1,15 @@
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.5/ext/bootsnap
+/Users/keeganoshea/.rbenv/versions/2.5.3/bin/ruby -I /Users/keeganoshea/.rbenv/versions/2.5.3/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210601-23586-kmj9k5.rb extconf.rb
+creating Makefile
+
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.5/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.5/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.7.5/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20210601-23586-qvr9ez/bootsnap

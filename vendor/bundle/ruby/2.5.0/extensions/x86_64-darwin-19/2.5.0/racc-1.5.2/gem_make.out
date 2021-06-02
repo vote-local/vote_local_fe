@@ -1,0 +1,16 @@
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/racc-1.5.2/ext/racc/cparse
+/Users/keeganoshea/.rbenv/versions/2.5.3/bin/ruby -I /Users/keeganoshea/.rbenv/versions/2.5.3/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210601-23586-1r4dv8o.rb extconf.rb
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/racc-1.5.2/ext/racc/cparse
+make DESTDIR\= clean
+
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/racc-1.5.2/ext/racc/cparse
+make DESTDIR\=
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/keeganoshea/turing/3module/projects/vote_local_fe/vendor/bundle/ruby/2.5.0/gems/racc-1.5.2/ext/racc/cparse
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20210601-23586-18sieia/racc
