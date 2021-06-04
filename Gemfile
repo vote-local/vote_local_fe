@@ -20,6 +20,9 @@ gem 'faraday'
 gem 'factory_bot_rails'
 gem 'faker'
 gem 'bcrypt', '~> 3.1.7'
+gem 'omniauth-twitter'
+gem "omniauth-rails_csrf_protection"
+gem "figaro"
 
 group :development, :test do
   gem 'pry'
