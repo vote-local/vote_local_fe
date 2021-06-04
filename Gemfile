@@ -24,6 +24,9 @@ gem 'omniauth-twitter'
 gem "omniauth-rails_csrf_protection"
 gem "figaro"
 
+gem 'bootstrap', '~> 4.1.1'
+gem 'jquery-rails'
+
 group :development, :test do
   gem 'pry'
   gem 'travis'
