@@ -14,4 +14,4 @@ deploy:
   on:
     repo: vote-local/vote_local_fe
     branch: main
-  skip_cleanup: 'true'
+  cleanup: 'true'
