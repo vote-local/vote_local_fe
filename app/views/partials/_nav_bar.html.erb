@@ -5,11 +5,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
+        <%= link_to "Dashboard", "/dashboard", :class => "nav-link active" %>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/dashboard">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/search">Search</a>
+          <%= link_to "Search", "/search", :class => "nav-link active" %>
         </li>
       </ul>
     </div>

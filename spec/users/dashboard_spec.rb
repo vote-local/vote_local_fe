@@ -8,16 +8,22 @@ RSpec.describe "User Dashboard Page" do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
     end
 
-    it 'displays navbar buttons' do
+    xit 'displays navbar buttons' do
       visit '/dashboard'
 
-      expect(page).to have_button("dashboard")
-      expect(page).to have_button("search")
-
+      # save_and_open_page
+      within ".navbar navbar-expand-lg navbar-light bg-light"  do
+        expect(page).to have_link("Dashboard")
+        expect(page).to have_link("Search")
+      end
 
     end
 
+    it 'displays followed representatives section' do
+      visit "/dashboard"
 
+      expect(page).to have_content("followed representatives")
+    end 
   end
 
 
