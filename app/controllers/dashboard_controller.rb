@@ -1,5 +1,7 @@
-class DashboardController < ApplicationController
-  def show
+# frozen_string_literal: true
 
-  end
+class DashboardController < ApplicationController
+  before_action :require_current_user
+
+  def show; end
 end

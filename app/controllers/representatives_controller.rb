@@ -1,5 +1,6 @@
-class RepresentativesController < ApplicationController
-  def index
+# frozen_string_literal: true
 
-  end
+class RepresentativesController < ApplicationController
+  before_action :require_current_user
+  def index; end
 end
