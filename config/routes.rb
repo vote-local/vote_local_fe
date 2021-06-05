@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   get '/auth/twitter/callback', to: 'sessions#create'
   get '/dashboard', to: 'dashboard#show'
+
+  get '/search', to: 'search#search'
+
+  resources :representatives, only: [:index]
 end
