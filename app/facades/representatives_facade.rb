@@ -3,7 +3,7 @@ class RepresentativesFacade
     data = RepresentativesService.representatives(address)
     reps = []
 
-    binding.pry
+    # binding.pry
 
     data.each do |rep|
       reps << Representative.new(rep)
