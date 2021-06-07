@@ -33,14 +33,12 @@ RSpec.describe 'Representatives Index Page' do
     it 'displays searched address and rep name and office' do
       expect(current_path).to eq('/representatives')
 
-      save_and_open_page
-
       expect(page).to have_content("representative results for 901 N Sherman Street, Denver, CO 80203")
       expect(page).to have_content("Jared Polis Governor of Colorado")
       expect(page).to have_content("Dianne Primavera Lieutenant Governor of Colorado")
     end
 
-    it "displays each rep as a link to their respective show page" do
+    xit "displays each rep as a link to their respective show page" do
 
     end
   end

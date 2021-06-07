@@ -6,7 +6,7 @@ RSpec.describe 'Representatives poro' do
     it 'has many attributes' do
 
       null = nil
-      
+
       info_hash = {
           id: null,
           type: "representative",
@@ -20,7 +20,7 @@ RSpec.describe 'Representatives poro' do
           }
         }
 
-      representative = Representatives.new(info_hash)
+      representative = Representative.new(info_hash)
 
       expect(representative.name).to eq('Jared Polis')
       expect(representative.party).to eq('Democratic Party')
