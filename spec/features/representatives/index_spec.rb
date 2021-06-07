@@ -25,7 +25,7 @@ RSpec.describe 'Representatives Index Page' do
 
       fill_in 'zip_code', with: '80203'
       fill_in 'city', with: 'Denver'
-      fill_in 'state', with: 'CO'
+      select 'Colorado', from: "State"
       fill_in 'street_adress', with: '901 N Sherman Street'
       click_button 'search'
     end
