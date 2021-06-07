@@ -25,22 +25,20 @@ RSpec.describe 'Representatives Index Page' do
 
       fill_in 'zip_code', with: '80203'
       fill_in 'city', with: 'Denver'
-      fill_in 'state', with: 'CO'
-      fill_in 'street_adress', with: '901 N Sherman Street'
+      select 'Colorado', from: "State"
+      fill_in 'street_address', with: '901 N Sherman Street'
       click_button 'search'
     end
 
-    it 'displays searched address and rep name and office' do
+    it 'displays searched address and rep name and office', :vcr do
       expect(current_path).to eq('/representatives')
-
-      save_and_open_page
 
       expect(page).to have_content("representative results for 901 N Sherman Street, Denver, CO 80203")
       expect(page).to have_content("Jared Polis Governor of Colorado")
       expect(page).to have_content("Dianne Primavera Lieutenant Governor of Colorado")
     end
 
-    it "displays each rep as a link to their respective show page" do
+    xit "displays each rep as a link to their respective show page" do
 
     end
   end

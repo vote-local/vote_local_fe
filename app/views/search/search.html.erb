@@ -1,17 +1,17 @@
 
 
-<h2>enter your adress to search for current reprresentatives </h2>
+<h2>Please enter your address to search for current representatives</h2>
 
 
 <%= form_with url: representatives_path, method: :get, local: true do |f| %> 
   <%= f.label "street address" %>
-  <%= f.text_field :street_adress %>  <br>
+  <%= f.text_field :street_address %>  <br>
 
   <%= f.label "city" %>
   <%= f.text_field :city %>  <br>
 
   <%= f.label "state" %>
-  <%= f.text_field :state %>  <br>
+  <%= f.select(:state, options_for_select(us_states, "CO")) %>  <br>
 
   <%= f.label "zip code" %>
   <%= f.text_field :zip_code %>  <br>
