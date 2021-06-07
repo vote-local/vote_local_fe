@@ -14,7 +14,7 @@ class RepresentativesController < ApplicationController
 
   def params_address_to_string
     address = ""
-    address += "#{params[:street_adress]}" if params[:street_adress] != ""
+    address += "#{params[:street_address]}" if params[:street_address] != ""
     address += ", #{params[:city]}" if params[:city]
     address += ", #{params[:state]}" if params[:state]
     address += " #{params[:zip_code]}" if params[:zip_code] != ""

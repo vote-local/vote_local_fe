@@ -14,7 +14,7 @@ RSpec.describe 'User search Page' do
 
       expect(page).to have_content('Please enter your address to search for current representatives')
 
-      expect(page).to have_field('street_adress')
+      expect(page).to have_field('street_address')
       expect(page).to have_field('city')
       expect(page).to have_field('state')
       expect(page).to have_field('zip_code')
@@ -43,7 +43,7 @@ RSpec.describe 'User search Page' do
       fill_in 'zip_code', with: '80203'
       fill_in 'city', with: 'Denver'
       select 'Colorado', from: "State"
-      fill_in 'street_adress', with: '901 N Sherman street'
+      fill_in 'street_address', with: '901 N Sherman street'
       click_button 'search'
 
       expect(current_path).to eq('/representatives')
@@ -51,7 +51,7 @@ RSpec.describe 'User search Page' do
   end
 
   describe 'sad paths' do
-    it 'dispays 404 if user is not loged in' do
+    it 'dispays 404 if user is not logged in' do
       visit '/search'
 
       expect(page).to have_content("The page you were looking for doesn't exist (404)")
