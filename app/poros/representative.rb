@@ -1,4 +1,4 @@
-class Representatives
+class Representative
   attr_reader :name, :party, :url, :photo_url, :office_name, :twitter_handle
 
   def initialize(info)
@@ -9,8 +9,4 @@ class Representatives
     @office_name = info[:attributes][:office_name]
     @twitter_handle = info[:attributes][:twitter_handle]
   end
-
-
-
-
 end
