@@ -3,10 +3,9 @@ class RepresentativesFacade
     data = RepresentativesService.representatives(address)
     reps = []
 
-    # binding.pry
 
-    data.each do |rep|
-      reps << Representative.new(rep)
+    reps = data[:data].map do |rep|
+      Representatives.new(rep)
     end
 
     reps

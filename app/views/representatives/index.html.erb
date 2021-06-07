@@ -1,0 +1,7 @@
+
+<h3> <%= "representatives results for #{@address}" %> </h3>
+
+<% @representatives.each do |representative| %>
+  <%= representative.name %>
+  <%=  representative.office_name %> <br>
+<% end  %>

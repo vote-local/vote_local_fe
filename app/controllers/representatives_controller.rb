@@ -4,8 +4,9 @@ class RepresentativesController < ApplicationController
   def index
     # response = Faraday.get('https://vote-local-be.herokuapp.com/api/v1/representatives')
     # data = JSON.parse(response.body, symbolize_names: true)
-
-    @representatives = RepresentativesFacade.top_reps(params_address_to_string)
+# binding.pry
+    @address = params_address_to_string
+    @representatives = RepresentativesFacade.top_reps(@address)
   end
 
   private
