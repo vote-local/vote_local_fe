@@ -13,8 +13,8 @@ class RepresentativesFacade
   def self.rep(address, api_id)
     parsed = RepresentativesService.representatives(address)
 
-    rep = parsed[:data].find_by do |rep|
-      rep[:api_id] == api_id
+    rep = parsed[:data].find do |rep|
+      rep[:attributes][:api_id] == api_id
     end
 
     Representative.new(rep)

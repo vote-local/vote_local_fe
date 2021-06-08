@@ -1,7 +1,11 @@
 
-<h3> <%= "representative results for #{@address}" %> </h3>
-
+<h3> <%= "Representative results for #{@address}" %> </h3>
+<table>
+  <th>Representative</th>
+  <th>Office</th>
 <% @representatives.each do |representative| %>
-  <%= representative.name %>
-  <%= representative.office_name %> <br>
+<tr>
+  <td><%= link_to representative.name, representative_path(id: representative.api_id, address: @address) %></td>
+  <td><%= representative.office_name %></td>
+  </tr>
 <% end  %>
