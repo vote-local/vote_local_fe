@@ -7,7 +7,7 @@ class RepresentativesController < ApplicationController
   end
 
   def show
-    @representative = RepresentativesFacade.rep(params[:address], params[:id])
+    @representative = RepresentativesFacade.rep(params[:address], params[:id].gsub(/[!@%&".]/,''))
   end
 
   private
