@@ -3,9 +3,10 @@ class TwitterController < ApplicationController
 
     twitter_id = TwitterService.representative_twitter_id(params[:handle])
 
-    redirect_to #something that includes twitter_id
+    # binding.pry
+    user_id = @current_user.uid
 
-
+    TwitterService.follow(twitter_id, user_id)
   end
 
 end

@@ -1,62 +1,43 @@
 ---
 http_interactions:
 - request:
-    method: get
-    uri: https://api.twitter.com/2/users/by/username/jaredpolis
+    method: post
+    uri: https://api.twitter.com/2/users/1399770258081128450/following
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: '{"target_user_id": "#{twitter_id}"}'
     headers:
       Authorization:
       - Bearer AAAAAAAAAAAAAAAAAAAAAFYBQQEAAAAACiSDxe%2BxOGYIKX%2BaZ6uDJmvu%2BiI%3DGXPwziMrc5NqPR88Khnv1iSDEeXRUn3Ljwx7MvCVzthmUr6E8Y
       User-Agent:
       - Faraday v1.4.2
+      Consumer key:
+      - z8C8OPOi1sRHGQk6SqwmaC9cw
+      Consumer secret:
+      - rPUx0xukbKiZc3ogvjZ8U9qB42Nd6FEnADDnD3fxdYIKfRlty7
+      Access token:
+      - 1399770258081128450-qm2TDGXNmMsYiW7MUBcr6WOpgLGXii
+      Token secret:
+      - vXwRaX5WAUbxHJDo1vglnTpOhHrPgmKzAgEl2Bwye1JLB
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 400
+      message: Bad Request
     headers:
-      Date:
-      - Tue, 08 Jun 2021 21:20:33 UTC
-      Server:
-      - tsa_a
-      Set-Cookie:
-      - guest_id=v1%3A162318723396514210; Max-Age=63072000; Expires=Thu, 08 Jun 2023
-        21:20:33 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      - personalization_id="v1_NmYERrKc/mjBb3F0raH9bQ=="; Max-Age=63072000; Expires=Thu,
-        08 Jun 2023 21:20:33 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache, no-store, max-age=0
       Content-Length:
-      - '84'
-      X-Access-Level:
-      - read
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
       - '0'
-      X-Rate-Limit-Limit:
-      - '300'
-      X-Rate-Limit-Reset:
-      - '1623188133'
-      Content-Disposition:
-      - attachment; filename=json.json
-      X-Content-Type-Options:
-      - nosniff
-      X-Rate-Limit-Remaining:
-      - '299'
-      Strict-Transport-Security:
-      - max-age=631138519
+      Date:
+      - Tue, 08 Jun 2021 23:28:17 GMT
+      Server:
+      - tsa_b
       X-Connection-Hash:
-      - a5ce197bc6866ec33fedea86d4926650551d802013c450337c68031cd2b83241
+      - 0aca3f3b2bcfc8225a05d5929a111990
     body:
-      encoding: ASCII-8BIT
-      string: '{"data":{"id":"15361570","name":"Jared Polis","username":"jaredpolis"}}'
-  recorded_at: Tue, 08 Jun 2021 21:20:34 GMT
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 08 Jun 2021 23:28:17 GMT
 recorded_with: VCR 6.0.0
