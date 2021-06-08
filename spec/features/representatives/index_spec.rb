@@ -13,21 +13,21 @@ RSpec.describe 'Representatives Index Page' do
       response = File.read("./spec/fixtures/representatives_index.json")
 
       stub_request(:get, "https://vote-local-be.herokuapp.com/api/v1/representatives?address=901%20N%20Sherman%20Street,%20Denver,%20CO%2080203").
-        with(
-          headers: {
-         'Accept'=>'*/*',
-         'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-         'User-Agent'=>'Faraday v1.4.2'
-          }).
-        to_return(status: 200, body: response, headers: {})
+         with(
+           headers: {
+       	  'Accept'=>'*/*',
+       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+       	  'User-Agent'=>'Faraday v1.4.2'
+           }).
+         to_return(status: 200, body: response, headers: {})
 
       visit '/search'
 
-      fill_in 'zip_code', with: '80203'
+      fill_in 'postal-code', with: '80203'
       fill_in 'city', with: 'Denver'
-      select 'Colorado', from: "State"
-      fill_in 'street_address', with: '901 N Sherman Street'
-      click_button 'search'
+      select 'Colorado', from: "state"
+      fill_in 'address-line', with: '901 N Sherman Street'
+      click_button 'Submit'
     end
 
     it 'displays searched address and rep name and office' do
@@ -43,7 +43,7 @@ RSpec.describe 'Representatives Index Page' do
 
       click_link("Jared Polis")
       expect(current_path).to eq('/representatives/80203JaredPolis')
-      
+
       expect(page).to have_content("Jared Polis")
       expect(page).to_not have_content("Dianne Primavera")
     end
