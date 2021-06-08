@@ -1,6 +1,11 @@
 class RepresentativesFacade
+
+  def self.fetch_representative_data(address)
+    data ||= RepresentativesService.representatives(address)
+  end
+
   def self.top_reps(address)
-    parsed = RepresentativesService.representatives(address)
+    parsed = fetch_representative_data(address)
     reps = []
 
     parsed[:data].each do |rep|
@@ -11,8 +16,8 @@ class RepresentativesFacade
   end
 
   def self.rep(address, api_id)
-    parsed = RepresentativesService.representatives(address)
-
+    parsed = fetch_representative_data(address)
+    
     rep = parsed[:data].find do |rep|
       rep[:attributes][:api_id] == api_id
     end
