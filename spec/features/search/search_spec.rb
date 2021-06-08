@@ -28,7 +28,7 @@ RSpec.describe 'User search Page' do
 
       response = File.read("./spec/fixtures/representatives_index.json")
 
-      stub_request(:get, "https://vote-local-be.herokuapp.com/api/v1/representatives?901%2BN%2BSherman%2Bstreet,%2BDenver,%2BCO%2B80203").
+      stub_request(:get, "https://vote-local-be.herokuapp.com/api/v1/representatives?address=901%20N%20Sherman%20street,%20Denver,%20CO%2080203").
         with(
           headers: {
          'Accept'=>'*/*',
@@ -47,6 +47,50 @@ RSpec.describe 'User search Page' do
       click_button 'search'
 
       expect(current_path).to eq('/representatives')
+    end
+
+    it 'takes the user to the representatives index page with valid query params' do
+      VCR.turn_off!
+      @user = User.create!(uid: '23782', username: 'testuser', token: 'kjh76sd876sd')
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
+
+      response = File.read("./spec/fixtures/representatives_index.json")
+
+      stub_request(:get, "https://vote-local-be.herokuapp.com/api/v1/representatives?address=901%20N%20Sherman%20street,%20Denver,%20CO%2080203").
+        with(
+          headers: {
+         'Accept'=>'*/*',
+         'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+         'User-Agent'=>'Faraday v1.4.2'
+          }).
+        to_return(status: 200, body: response, headers: {})
+
+
+      visit '/search'
+
+      fill_in 'zip_code', with: '80203'
+      fill_in 'city', with: 'Denver'
+      select 'Colorado', from: "State"
+      fill_in 'street_address', with: '901 N Sherman street'
+      click_button 'search'
+
+      expect(current_path).to eq('/representatives')
+    end
+
+    xit 'returns an error and redirects to search if user does not select city and/or zip code', :vcr do
+      @user = User.create!(uid: '23782', username: 'testuser', token: 'kjh76sd876sd')
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
+
+      visit '/search'
+
+      fill_in 'zip_code', with: ''
+      fill_in 'city', with: ''
+      select 'Colorado', from: "State"
+      fill_in 'street_address', with: ''
+      click_button 'search'
+      expect(page).to have_content("Please fill out this field")
+
+      expect(current_path).to eq('/search')
     end
   end
 

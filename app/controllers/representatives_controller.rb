@@ -7,7 +7,7 @@ class RepresentativesController < ApplicationController
   end
 
   def show
-    @representatives = RepresentativesFacade.rep(@address, params[:api_id])
+    @representative = RepresentativesFacade.rep(params[:address], params[:id])
   end
 
   private
