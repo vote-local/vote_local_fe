@@ -1,232 +1,225 @@
 {
-    "data": [
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Jared Polis",
-                "party": "Democratic Party",
-                "url": "https://www.colorado.gov/governor/",
-                "photo_url": "no photo found",
-                "office_name": "Governor of Colorado",
-                "twitter_handle": "jaredpolis"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Dianne Primavera",
-                "party": "Democratic Party",
-                "url": "https://ltgovernor.colorado.gov/",
-                "photo_url": "no photo found",
-                "office_name": "Lieutenant Governor of Colorado",
-                "twitter_handle": "LtGovofCO"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Chris Hansen",
-                "party": "Democratic Party",
-                "url": "https://leg.colorado.gov/legislators/chris-hansen",
-                "photo_url": "no photo found",
-                "office_name": "CO State Senator",
-                "twitter_handle": "HansenForCO"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Alec Garnett",
-                "party": "Democratic Party",
-                "url": "https://leg.colorado.gov/legislators/alec-garnett",
-                "photo_url": "http://leg.colorado.gov/sites/default/files/styles/width_300/public/2017A_rsz_garnett-co-17.jpg?itok=3Cca_7YO",
-                "office_name": "CO State Representative",
-                "twitter_handle": "AlecGarnett"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Phil Weiser",
-                "party": "Democratic Party",
-                "url": "https://coag.gov/",
-                "photo_url": "no photo found",
-                "office_name": "CO Attorney General",
-                "twitter_handle": "not found"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Dave Young",
-                "party": "Democratic Party",
-                "url": "https://treasury.colorado.gov/",
-                "photo_url": "no photo found",
-                "office_name": "CO State Treasurer",
-                "twitter_handle": "colotreasurer"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Monica M. Márquez",
-                "party": "Nonpartisan",
-                "url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
-                "photo_url": "no photo found",
-                "office_name": "CO Supreme Court Justice",
-                "twitter_handle": "not found"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Melissa Hart",
-                "party": "Nonpartisan",
-                "url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
-                "photo_url": "no photo found",
-                "office_name": "CO Supreme Court Justice",
-                "twitter_handle": "not found"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Brian D. Boatright",
-                "party": "Nonpartisan",
-                "url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
-                "photo_url": "no photo found",
-                "office_name": "CO Supreme Court Justice",
-                "twitter_handle": "not found"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Maria E. Berkenkotter",
-                "party": "Nonpartisan",
-                "url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
-                "photo_url": "no photo found",
-                "office_name": "CO Supreme Court Justice",
-                "twitter_handle": "not found"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Carlos A. Samour, Jr.",
-                "party": "Nonpartisan",
-                "url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
-                "photo_url": "no photo found",
-                "office_name": "CO Supreme Court Justice",
-                "twitter_handle": "not found"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Richard L. Gabriel",
-                "party": "Nonpartisan",
-                "url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
-                "photo_url": "no photo found",
-                "office_name": "CO Supreme Court Justice",
-                "twitter_handle": "not found"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "William W. Hood, III",
-                "party": "Nonpartisan",
-                "url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
-                "photo_url": "no photo found",
-                "office_name": "CO Supreme Court Justice",
-                "twitter_handle": "not found"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Jena Griswold",
-                "party": "Democratic Party",
-                "url": "https://www.sos.state.co.us/",
-                "photo_url": "no photo found",
-                "office_name": "CO Secretary of State",
-                "twitter_handle": "JenaGriswold"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Timothy M. O'Brien",
-                "party": "Nonpartisan",
-                "url": "https://denverauditor.org/",
-                "photo_url": "no photo found",
-                "office_name": "Denver City Auditor",
-                "twitter_handle": "not found"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Robin Kniech",
-                "party": "Nonpartisan",
-                "url": "https://www.denvergov.org/content/denvergov/en/denver-council-district-12.html",
-                "photo_url": "https://www.denvergov.org/content/dam/denvergov/Portals/695/images/CouncilHeadshots/RobinKniech_web.jpg",
-                "office_name": "Denver City Council Member",
-                "twitter_handle": "KniechAtLarge"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Deborah \"Debbie\" Ortega",
-                "party": "Nonpartisan",
-                "url": "http://www.denvergov.org/content/denvergov/en/denver-council-district-13.html",
-                "photo_url": "https://www.denvergov.org/content/dam/denvergov/Portals/695/images/CouncilHeadshots/DeborahOrtega_web.jpg",
-                "office_name": "Denver City Council Member",
-                "twitter_handle": "ortegaatlarge"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Michael Hancock",
-                "party": "Nonpartisan",
-                "url": "https://www.denvergov.org/content/denvergov/en/mayors-office.html",
-                "photo_url": "https://www.denvergov.org/content/dam/denvergov/Portals/728/images/Mayor-Hancock-Web.jpg",
-                "office_name": "Denver Mayor",
-                "twitter_handle": "MayorHancock"
-            }
-        },
-        {
-            "id": null,
-            "type": "representative",
-            "attributes": {
-                "name": "Paul López",
-                "party": "Nonpartisan",
-                "url": "https://www.denvergov.org/content/denvergov/en/denver-office-of-the-clerk-and-recorder/contact.html",
-                "photo_url": "no photo found",
-                "office_name": "Denver City Clerk and Recorder",
-                "twitter_handle": "DenverElections"
-            }
-        }
-    ]
+"data": [
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Jared Polis",
+"party": "Democratic Party",
+"url": "https://www.colorado.gov/governor/",
+"photo_url": "no photo found",
+"office_name": "Governor of Colorado",
+"twitter_handle": "jaredpolis",
+"api_id": "80203JaredPolis"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Dianne Primavera",
+"party": "Democratic Party",
+"url": "https://ltgovernor.colorado.gov/",
+"photo_url": "no photo found",
+"office_name": "Lieutenant Governor of Colorado",
+"twitter_handle": "LtGovofCO",
+"api_id": "80203DiannePrimavera"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Phil Weiser",
+"party": "Democratic Party",
+"url": "https://coag.gov/",
+"photo_url": "no photo found",
+"office_name": "CO Attorney General",
+"twitter_handle": "not found",
+"api_id": "80203PhilWeiser"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Dave Young",
+"party": "Democratic Party",
+"url": "https://treasury.colorado.gov/",
+"photo_url": "no photo found",
+"office_name": "CO State Treasurer",
+"twitter_handle": "colotreasurer",
+"api_id": "80203DaveYoung"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Monica M. Márquez",
+"party": "Nonpartisan",
+"url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
+"photo_url": "no photo found",
+"office_name": "CO Supreme Court Justice",
+"twitter_handle": "not found",
+"api_id": "80203MonicaM.Márquez"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Melissa Hart",
+"party": "Nonpartisan",
+"url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
+"photo_url": "no photo found",
+"office_name": "CO Supreme Court Justice",
+"twitter_handle": "not found",
+"api_id": "80203MelissaHart"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Brian D. Boatright",
+"party": "Nonpartisan",
+"url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
+"photo_url": "no photo found",
+"office_name": "CO Supreme Court Justice",
+"twitter_handle": "not found",
+"api_id": "80203BrianD.Boatright"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Maria E. Berkenkotter",
+"party": "Nonpartisan",
+"url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
+"photo_url": "no photo found",
+"office_name": "CO Supreme Court Justice",
+"twitter_handle": "not found",
+"api_id": "80203MariaE.Berkenkotter"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Carlos A. Samour, Jr.",
+"party": "Nonpartisan",
+"url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
+"photo_url": "no photo found",
+"office_name": "CO Supreme Court Justice",
+"twitter_handle": "not found",
+"api_id": "80203CarlosA.Samour,Jr."
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Richard L. Gabriel",
+"party": "Nonpartisan",
+"url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
+"photo_url": "no photo found",
+"office_name": "CO Supreme Court Justice",
+"twitter_handle": "not found",
+"api_id": "80203RichardL.Gabriel"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "William W. Hood, III",
+"party": "Nonpartisan",
+"url": "https://www.courts.state.co.us/Courts/Supreme_Court/",
+"photo_url": "no photo found",
+"office_name": "CO Supreme Court Justice",
+"twitter_handle": "not found",
+"api_id": "80203WilliamW.Hood,III"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Jena Griswold",
+"party": "Democratic Party",
+"url": "https://www.sos.state.co.us/",
+"photo_url": "no photo found",
+"office_name": "CO Secretary of State",
+"twitter_handle": "JenaGriswold",
+"api_id": "80290JenaGriswold"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Timothy M. O'Brien",
+"party": "Nonpartisan",
+"url": "https://denverauditor.org/",
+"photo_url": "no photo found",
+"office_name": "Denver City Auditor",
+"twitter_handle": "not found",
+"api_id": "80202TimothyM.O'Brien"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Robin Kniech",
+"party": "Nonpartisan",
+"url": "https://www.denvergov.org/content/denvergov/en/denver-council-district-12.html",
+"photo_url": "https://www.denvergov.org/content/dam/denvergov/Portals/695/images/CouncilHeadshots/RobinKniech_web.jpg",
+"office_name": "Denver City Council Member",
+"twitter_handle": "KniechAtLarge",
+"api_id": "80202RobinKniech"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Deborah \"Debbie\" Ortega",
+"party": "Nonpartisan",
+"url": "http://www.denvergov.org/content/denvergov/en/denver-council-district-13.html",
+"photo_url": "https://www.denvergov.org/content/dam/denvergov/Portals/695/images/CouncilHeadshots/DeborahOrtega_web.jpg",
+"office_name": "Denver City Council Member",
+"twitter_handle": "ortegaatlarge",
+"api_id": "80202Deborah\"Debbie\"Ortega"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Michael Hancock",
+"party": "Nonpartisan",
+"url": "https://www.denvergov.org/content/denvergov/en/mayors-office.html",
+"photo_url": "https://www.denvergov.org/content/dam/denvergov/Portals/728/images/Mayor-Hancock-Web.jpg",
+"office_name": "Denver Mayor",
+"twitter_handle": "MayorHancock",
+"api_id": "80202MichaelHancock"
+}
+},
+{
+"id": null,
+"type": "representative",
+"attributes": {
+"name": "Paul López",
+"party": "Nonpartisan",
+"url": "https://www.denvergov.org/content/denvergov/en/denver-office-of-the-clerk-and-recorder/contact.html",
+"photo_url": "no photo found",
+"office_name": "Denver City Clerk and Recorder",
+"twitter_handle": "DenverElections",
+"api_id": "80202PaulLópez"
+}
+}
+]
 }
