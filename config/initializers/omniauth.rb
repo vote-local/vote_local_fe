@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :twitter, ENV['api_key'], ENV['api_secret']
+  provider :twitter, ENV['twitter_api_key'], ENV['twitter_api_secret']
 end
