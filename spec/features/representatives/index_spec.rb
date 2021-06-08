@@ -12,14 +12,14 @@ RSpec.describe 'Representatives Index Page' do
 
       response = File.read("./spec/fixtures/representatives_index.json")
 
-      stub_request(:get, "https://vote-local-be.herokuapp.com/api/v1/representatives?901%2BN%2BSherman%2BStreet,%2BDenver,%2BCO%2B80203").
-         with(
-           headers: {
-       	  'Accept'=>'*/*',
-       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-       	  'User-Agent'=>'Faraday v1.4.2'
-           }).
-         to_return(status: 200, body: response, headers: {})
+      stub_request(:get, "https://vote-local-be.herokuapp.com/api/v1/representatives?address=901%20N%20Sherman%20Street,%20Denver,%20CO%2080203").
+        with(
+          headers: {
+         'Accept'=>'*/*',
+         'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+         'User-Agent'=>'Faraday v1.4.2'
+          }).
+        to_return(status: 200, body: response, headers: {})
 
       visit '/search'
 

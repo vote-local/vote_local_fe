@@ -28,7 +28,7 @@ RSpec.describe 'User search Page' do
 
       response = File.read("./spec/fixtures/representatives_index.json")
 
-      stub_request(:get, "https://vote-local-be.herokuapp.com/api/v1/representatives?901%2BN%2BSherman%2Bstreet,%2BDenver,%2BCO%2B80203").
+      stub_request(:get, "https://vote-local-be.herokuapp.com/api/v1/representatives?address=901%20N%20Sherman%20street,%20Denver,%20CO%2080203").
         with(
           headers: {
          'Accept'=>'*/*',
