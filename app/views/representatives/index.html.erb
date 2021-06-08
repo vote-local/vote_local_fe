@@ -1,11 +1,12 @@
-
-<h3> <%= "Representative results for #{@address}" %> </h3>
-<table>
-  <th>Representative</th>
-  <th>Office</th>
-<% @representatives.each do |representative| %>
-<tr>
-  <td><%= link_to representative.name, representative_path(id: representative.api_id, address: @address) %></td>
-  <td><%= representative.office_name %></td>
-  </tr>
-<% end  %>
+<div class="jumbotron">
+  <h3> <%= "Representative results for #{@address}" %> </h3> <br>
+  <table>
+    <th>Representative</th>
+    <th>Office</th>
+  <% @representatives.each do |representative| %>
+  <tr>
+    <td><%= link_to representative.name, representative_path(id: representative.api_id, address: @address) %></td>
+    <td><%= representative.office_name %></td>
+    </tr>
+  <% end  %>
+</div>

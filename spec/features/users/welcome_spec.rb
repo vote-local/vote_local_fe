@@ -45,7 +45,7 @@ RSpec.describe 'Welcome Page' do
         click_on 'Login with Twitter'
 
         expect(current_path).to eq('/dashboard')
-        expect(page).to have_content("Welcome, #{@user.username}!")
+        expect(page).to have_content("Welcome to Vote Local testuser!")
       end
     end
   end
