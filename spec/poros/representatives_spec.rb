@@ -16,7 +16,8 @@ RSpec.describe 'Representatives poro' do
             url: "https://www.colorado.gov/governor/",
             photo_url: "no photo found",
             office_name: "Governor of Colorado",
-            twitter_handle: "jaredpolis"
+            twitter_handle: "jaredpolis",
+            api_id: "80203JaredPolis"
           }
         }
 
@@ -28,6 +29,7 @@ RSpec.describe 'Representatives poro' do
       expect(representative.photo_url).to eq("no photo found")
       expect(representative.office_name).to eq("Governor of Colorado")
       expect(representative.twitter_handle).to eq("jaredpolis")
+      expect(representative.api_id).to eq("80203JaredPolis")
 
     end
   end
