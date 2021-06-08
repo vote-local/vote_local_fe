@@ -8,5 +8,8 @@ Rails.application.routes.draw do
 
   get '/search', to: 'search#search'
 
+  get '/twitter/representatives/:handle', to: 'twitter#get_twitter_id'
+
+
   resources :representatives, only: [:index]
 end
