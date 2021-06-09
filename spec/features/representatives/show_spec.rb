@@ -36,7 +36,7 @@ RSpec.describe 'Election Show Page' do
     expect(page).to have_content("Party Affiliation")
     expect(page).to have_content("Nonpartisan")
     expect(page).to have_content("Twitter")
-    expect(page).to have_content("MayorHancock")
+    expect(page).to have_content("https://www.denvergov.org/content/denvergov/en/mayors-office.html")
   end
 
   it 'allows user to follow a representative and redirects to dashboard displaying reps name' do
