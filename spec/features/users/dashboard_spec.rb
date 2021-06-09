@@ -11,17 +11,36 @@ RSpec.describe 'User Dashboard Page' do
     xit 'displays navbar buttons' do
       visit '/dashboard'
 
-      # save_and_open_page
       within '.navbar navbar-expand-lg navbar-light bg-light' do
         expect(page).to have_link('Dashboard')
         expect(page).to have_link('Search')
       end
     end
 
-    it 'displays followed representatives section' do
+    it 'displays followed representatives section a message if not following anyone' do
       visit '/dashboard'
 
       expect(page).to have_content('Followed Representatives')
+      expect(page).to have_content('Currently not following any Representatives')
+    end
+
+    it 'displays the names of followed reps' do
+      twitter_rep = TwitterRep.create!(name: "testname",
+                                 api_id: "testname21353252",
+                                twitter: "testnametwitter",
+                                   user: @user)
+
+      twitter_rep2 = TwitterRep.create!(name: "test2name",
+                                  api_id: "testnameasdasdasdasf",
+                                 twitter: "testname2twitter",
+                                    user: @user)
+
+      visit '/dashboard'
+
+
+
+      expect(page).to have_content(twitter_rep.name)
+      expect(page).to have_content(twitter_rep2.name)
     end
   end
 
