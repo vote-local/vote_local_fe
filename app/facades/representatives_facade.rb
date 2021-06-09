@@ -19,7 +19,7 @@ class RepresentativesFacade
     parsed = fetch_representative_data(address)
 
     rep = parsed[:data].find do |rep|
-      rep[:attributes][:api_id].gsub(/[!@%&".]/,'') == api_id
+      rep[:attributes][:api_id] == api_id
     end
 
     Representative.new(rep)

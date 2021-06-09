@@ -8,6 +8,6 @@ class Representative
     @photo_url = info[:attributes][:photo_url]
     @office_name = info[:attributes][:office_name]
     @twitter_handle = info[:attributes][:twitter_handle]
-    @api_id = info[:attributes][:api_id].gsub(/[!@%&".]/,'')
+    @api_id = info[:attributes][:api_id]
   end
 end
