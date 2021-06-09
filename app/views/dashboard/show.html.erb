@@ -1,6 +1,15 @@
 <div class="jumbotron">
   <h2>Welcome to Vote Local <%= current_user.username %>!</h2> <br>
 
-  <h4 class="representatives" >Followed Representatives </h4>
+  <div>
+    <h3 class="representatives" >Followed Representatives </h3>
 
+    <% if !current_user.twitter_reps.empty? %>
+      <% current_user.twitter_reps.each do |twitter_rep| %>
+        <%= twitter_rep.name  %> <br>
+        <% end %>
+    <% else %>
+      <p>Currently not following any Representatives</p>
+    <% end %>
+  </div>
 </div>

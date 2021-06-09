@@ -38,4 +38,11 @@ RSpec.describe 'Election Show Page' do
     expect(page).to have_content("Twitter")
     expect(page).to have_content("MayorHancock")
   end
+
+  it 'allows user to follow a representative and redirects to dashboard displaying reps name' do
+    click_button("Follow")
+
+    expect(current_path).to eq("/dashboard")
+    expect(page).to have_content("Michael Hancock")
+  end
 end
