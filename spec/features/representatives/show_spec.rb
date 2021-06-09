@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe 'Election Show Page' do
   before :each  do
-    VCR.turn_off!
     @user = User.create!(uid: '23782', username: 'testuser', token: 'kjh76sd876sd')
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
 

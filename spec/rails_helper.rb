@@ -41,15 +41,15 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = true
 
-  config.around do | example |
-    if example.metadata[:turn_off_vcr]
-      VCR.turn_off!
-      example.run
-      VCR.turn_on!
-    else
-      example.run
-    end
-  end
+  # config.around do | example |
+  #   if example.metadata[:turn_off_vcr]
+  #     #
+  #     example.run
+  #     VCR.turn_on!
+  #   else
+  #     example.run
+  #   end
+  # end
 
   # You can uncomment this line to turn off ActiveRecord support entirely.
   # config.use_active_record = false
@@ -88,6 +88,7 @@ RSpec.configure do |config|
     config.filter_sensitive_data('<key>') { ENV['GOOGLE_CIVICS_API_KEY'] }
     config.default_cassette_options = {
       re_record_interval: 30.days
+    }
     config.configure_rspec_metadata!
   end
 end
