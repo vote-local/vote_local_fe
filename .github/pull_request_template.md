@@ -5,9 +5,9 @@ Necessary checkmarks:
 
 Type of change:
     
-    [] New feature - added movie poster image to movie show page
+    [] New feature
     [] Bug Fix
-    [] Improvement / Refactor - prevent user from adding themselves
+    [] Improvement / Refactor
 
 Any Requests From Reviewer:
 

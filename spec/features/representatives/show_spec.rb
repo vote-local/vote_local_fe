@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
+
 RSpec.describe 'Election Show Page' do
   before :each  do
     VCR.turn_off!
@@ -20,11 +19,11 @@ RSpec.describe 'Election Show Page' do
 
     visit '/search'
 
-    fill_in 'zip_code', with: '80203'
+    fill_in 'postal-code', with: '80203'
     fill_in 'city', with: 'Denver'
-    select 'Colorado', from: "State"
-    fill_in 'street_address', with: '901 N Sherman Street'
-    click_button 'search'
+    select 'Colorado', from: "state"
+    fill_in 'address-line', with: '901 N Sherman Street'
+    click_button 'Submit'
 
     click_link("Michael Hancock")
     expect(current_path).to eq('/representatives/80202MichaelHancock')
@@ -37,6 +36,13 @@ RSpec.describe 'Election Show Page' do
     expect(page).to have_content("Party Affiliation")
     expect(page).to have_content("Nonpartisan")
     expect(page).to have_content("Twitter")
-    expect(page).to have_content("MayorHancock")
+    expect(page).to have_link(href: "https://www.denvergov.org/content/denvergov/en/mayors-office.html")
+  end
+
+  it 'allows user to follow a representative and redirects to dashboard displaying reps name' do
+    click_button("Follow")
+
+    expect(current_path).to eq("/dashboard")
+    expect(page).to have_content("Michael Hancock")
   end
 end

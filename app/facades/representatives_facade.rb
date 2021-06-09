@@ -17,7 +17,7 @@ class RepresentativesFacade
 
   def self.rep(address, api_id)
     parsed = fetch_representative_data(address)
-    
+
     rep = parsed[:data].find do |rep|
       rep[:attributes][:api_id] == api_id
     end

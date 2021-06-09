@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/2/tweets/search/recent?query=jiridpolis
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer AAAAAAAAAAAAAAAAAAAAAFYBQQEAAAAACiSDxe%2BxOGYIKX%2BaZ6uDJmvu%2BiI%3DGXPwziMrc5NqPR88Khnv1iSDEeXRUn3Ljwx7MvCVzthmUr6E8Y
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 09 Jun 2021 03:30:30 UTC
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A162320943029646285; Max-Age=63072000; Expires=Fri, 09 Jun 2023
+        03:30:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_mGybD0PONAvgQNGSDLTbxA=="; Max-Age=63072000; Expires=Fri,
+        09 Jun 2023 03:30:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Content-Length:
+      - '53'
+      X-Access-Level:
+      - read
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Rate-Limit-Limit:
+      - '450'
+      X-Rate-Limit-Reset:
+      - '1623209817'
+      Content-Disposition:
+      - attachment; filename=json.json
+      X-Content-Type-Options:
+      - nosniff
+      X-Rate-Limit-Remaining:
+      - '443'
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Connection-Hash:
+      - 2f5250ddc78e91c0306610b8fbb6122d7195df5f66cefbc2271950abb8182d65
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta":{"result_count":0}}'
+  recorded_at: Wed, 09 Jun 2021 03:30:30 GMT
+recorded_with: VCR 6.0.0

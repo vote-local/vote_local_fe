@@ -14,11 +14,11 @@ RSpec.describe 'User search Page' do
 
       expect(page).to have_content('Please enter your address to search for current representatives')
 
-      expect(page).to have_field('street_address')
+      expect(page).to have_field('address-line')
       expect(page).to have_field('city')
       expect(page).to have_field('state')
-      expect(page).to have_field('zip_code')
-      expect(page).to have_button('search')
+      expect(page).to have_field('postal-code')
+      expect(page).to have_button('Submit')
     end
 
     it 'takes the user to the representatives index page with valid query params' do
@@ -40,11 +40,11 @@ RSpec.describe 'User search Page' do
 
       visit '/search'
 
-      fill_in 'zip_code', with: '80203'
+      fill_in 'postal-code', with: '80203'
       fill_in 'city', with: 'Denver'
-      select 'Colorado', from: "State"
-      fill_in 'street_address', with: '901 N Sherman street'
-      click_button 'search'
+      select 'Colorado', from: "state"
+      fill_in 'address-line', with: '901 N Sherman street'
+      click_button 'Submit'
 
       expect(current_path).to eq('/representatives')
     end
@@ -68,11 +68,11 @@ RSpec.describe 'User search Page' do
 
       visit '/search'
 
-      fill_in 'zip_code', with: '80203'
+      fill_in 'postal-code', with: '80203'
       fill_in 'city', with: 'Denver'
-      select 'Colorado', from: "State"
-      fill_in 'street_address', with: '901 N Sherman street'
-      click_button 'search'
+      select 'Colorado', from: "state"
+      fill_in 'address-line', with: '901 N Sherman street'
+      click_button 'Submit'
 
       expect(current_path).to eq('/representatives')
     end
@@ -83,11 +83,11 @@ RSpec.describe 'User search Page' do
 
       visit '/search'
 
-      fill_in 'zip_code', with: ''
+      fill_in 'postal-code', with: ''
       fill_in 'city', with: ''
-      select 'Colorado', from: "State"
-      fill_in 'street_address', with: ''
-      click_button 'search'
+      select 'Colorado', from: "state"
+      fill_in 'address-line', with: ''
+      click_button 'Submit'
       expect(page).to have_content("Please fill out this field")
 
       expect(current_path).to eq('/search')
