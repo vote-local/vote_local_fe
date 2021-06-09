@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/2/tweets/search/recent?query=jaredpolis
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer AAAAAAAAAAAAAAAAAAAAAFYBQQEAAAAACiSDxe%2BxOGYIKX%2BaZ6uDJmvu%2BiI%3DGXPwziMrc5NqPR88Khnv1iSDEeXRUn3Ljwx7MvCVzthmUr6E8Y
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '597'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 09 Jun 2021 03:30:29 GMT
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A162320942962607071; Max-Age=63072000; Expires=Fri, 09 Jun 2023
+        03:30:29 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_yQGwVeomuXmHrn6HR7eJfQ=="; Max-Age=63072000; Expires=Fri,
+        09 Jun 2023 03:30:29 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Connection-Hash:
+      - 19b9cd3db126f53bdfce1979cc5b5a2a
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '450'
+      X-Rate-Limit-Remaining:
+      - '444'
+      X-Rate-Limit-Reset:
+      - '1623209817'
+      X-Response-Time:
+      - '115'
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6IjE0MDI0NjgwNTExNTM1MjY3ODUiLCJ0ZXh0IjoiUlQgQEdvdnRzVGhlUHJvYmxlbTogVGhlIEBBdmFsYW5jaGUgY291bGQgcmVhbGx5IHVzZSBhIHBhY2tlZCBhcmVuYSByaWdodCBub3cgYnV0IHRoZXkgd2VyZSByb2JiZWQgb2YgdGhhdCBieSBATWF5b3JIYW5jb2NrIGFuZCBAamFyZWRwb2xpcy4ifSx7ImlkIjoiMTQwMjQ2NzIxMjY0NDk0NTkyMSIsInRleHQiOiJSVCBAR292dHNUaGVQcm9ibGVtOiBUaGUgQEF2YWxhbmNoZSBjb3VsZCByZWFsbHkgdXNlIGEgcGFja2VkIGFyZW5hIHJpZ2h0IG5vdyBidXQgdGhleSB3ZXJlIHJvYmJlZCBvZiB0aGF0IGJ5IEBNYXlvckhhbmNvY2sgYW5kIEBqYXJlZHBvbGlzLiJ9LHsiaWQiOiIxNDAyNDY3MjA3OTA1MzUzNzMzIiwidGV4dCI6IlJUIEBHb3Z0c1RoZVByb2JsZW06IFRoZSBAQXZhbGFuY2hlIGNvdWxkIHJlYWxseSB1c2UgYSBwYWNrZWQgYXJlbmEgcmlnaHQgbm93IGJ1dCB0aGV5IHdlcmUgcm9iYmVkIG9mIHRoYXQgYnkgQE1heW9ySGFuY29jayBhbmQgQGphcmVkcG9saXMuIn0seyJpZCI6IjE0MDI0NjcxNjA3OTA3OTgzMzciLCJ0ZXh0IjoiUlQgQEdvdnRzVGhlUHJvYmxlbTogVGhlIEBBdmFsYW5jaGUgY291bGQgcmVhbGx5IHVzZSBhIHBhY2tlZCBhcmVuYSByaWdodCBub3cgYnV0IHRoZXkgd2VyZSByb2JiZWQgb2YgdGhhdCBieSBATWF5b3JIYW5jb2NrIGFuZCBAamFyZWRwb2xpcy4ifSx7ImlkIjoiMTQwMjQ2NzEyODQyNzQ5OTUyMSIsInRleHQiOiJSVCBAR292dHNUaGVQcm9ibGVtOiBUaGUgQEF2YWxhbmNoZSBjb3VsZCByZWFsbHkgdXNlIGEgcGFja2VkIGFyZW5hIHJpZ2h0IG5vdyBidXQgdGhleSB3ZXJlIHJvYmJlZCBvZiB0aGF0IGJ5IEBNYXlvckhhbmNvY2sgYW5kIEBqYXJlZHBvbGlzLiJ9LHsiaWQiOiIxNDAyNDY3MDcxNjE1NjYwMDM3IiwidGV4dCI6IknigJl2ZSBnb3QgYSBmZWVsaW5nIEnigJltIGdvaW5nIHRvIHdpbiB0aGUgQ29sb3JhZG8gQ292aWQgbWVnYSBtaWxsaW9ucy4gQGphcmVkcG9saXMifSx7ImlkIjoiMTQwMjQ2NjkzMTcxODg1NjcwNSIsInRleHQiOiJSVCBAR292dHNUaGVQcm9ibGVtOiBUaGUgQEF2YWxhbmNoZSBjb3VsZCByZWFsbHkgdXNlIGEgcGFja2VkIGFyZW5hIHJpZ2h0IG5vdyBidXQgdGhleSB3ZXJlIHJvYmJlZCBvZiB0aGF0IGJ5IEBNYXlvckhhbmNvY2sgYW5kIEBqYXJlZHBvbGlzLiJ9LHsiaWQiOiIxNDAyNDY2NzczMzI5MzIxOTg3IiwidGV4dCI6IlRoZSBAQXZhbGFuY2hlIGNvdWxkIHJlYWxseSB1c2UgYSBwYWNrZWQgYXJlbmEgcmlnaHQgbm93IGJ1dCB0aGV5IHdlcmUgcm9iYmVkIG9mIHRoYXQgYnkgQE1heW9ySGFuY29jayBhbmQgQGphcmVkcG9saXMuIn0seyJpZCI6IjE0MDI0NjYyMTI3OTg1MDQ5NjIiLCJ0ZXh0IjoiQExpZ2h0czJUaGVXb3JsZCBAR292b2ZDTyBAamFyZWRwb2xpcyBcdUQ4M0RcdURFMDIganVzdCBtYWtlIHN1cmUgeW91IGdldCB2YWNjaW5hdGVkIGFuZCBjcmFjayBvcGVuIGEgY29sZCBvbmUgdG8gY2VsZWJyYXRlIEpva2ljcyBNVlAgaWYgeW91IHJlYWxseSB3YW5uYSByZXByZXNlbnQgdGhlIENvbG9yYWRvIGN1bHR1cmUifSx7ImlkIjoiMTQwMjQ2NjA0MzkyNzMwMjE0OCIsInRleHQiOiJAamFyZWRwb2xpcyBwbGVhc2UgVkVUTyBIQiAxMzE3ISBJdCBpcyBub3QgZ29vZCBmb3IgQ29sb3JhZG8gTU1KIHBhdGllbnRzIGFuZCBmYW1pbGllcyEifV0sIm1ldGEiOnsibmV3ZXN0X2lkIjoiMTQwMjQ2ODA1MTE1MzUyNjc4NSIsIm9sZGVzdF9pZCI6IjE0MDI0NjYwNDM5MjczMDIxNDgiLCJyZXN1bHRfY291bnQiOjEwLCJuZXh0X3Rva2VuIjoiYjI2djg5YzE5enFnOG8zZnBkZzdyZGl5cWFsb3F3aGYydDl6bmlrZTY2bjN4In19
+  recorded_at: Wed, 09 Jun 2021 03:30:29 GMT
+recorded_with: VCR 6.0.0
