@@ -21,14 +21,14 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 09 Jun 2021 03:07:23 UTC
+      - Wed, 09 Jun 2021 03:30:30 UTC
       Server:
       - tsa_a
       Set-Cookie:
-      - guest_id=v1%3A162320804395898183; Max-Age=63072000; Expires=Fri, 09 Jun 2023
-        03:07:23 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      - personalization_id="v1_jcTdgdbe0b0G/2eZMXb2gQ=="; Max-Age=63072000; Expires=Fri,
-        09 Jun 2023 03:07:23 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - guest_id=v1%3A162320943029646285; Max-Age=63072000; Expires=Fri, 09 Jun 2023
+        03:30:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_mGybD0PONAvgQNGSDLTbxA=="; Max-Age=63072000; Expires=Fri,
+        09 Jun 2023 03:30:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
@@ -44,19 +44,19 @@ http_interactions:
       X-Rate-Limit-Limit:
       - '450'
       X-Rate-Limit-Reset:
-      - '1623208120'
+      - '1623209817'
       Content-Disposition:
       - attachment; filename=json.json
       X-Content-Type-Options:
       - nosniff
       X-Rate-Limit-Remaining:
-      - '442'
+      - '443'
       Strict-Transport-Security:
       - max-age=631138519
       X-Connection-Hash:
-      - c626e1c0962dba7d2d3e696e0aa8703d5a739fd3ccd23f9e8a4fd1730caf0051
+      - 2f5250ddc78e91c0306610b8fbb6122d7195df5f66cefbc2271950abb8182d65
     body:
       encoding: ASCII-8BIT
       string: '{"meta":{"result_count":0}}'
-  recorded_at: Wed, 09 Jun 2021 03:07:23 GMT
+  recorded_at: Wed, 09 Jun 2021 03:30:30 GMT
 recorded_with: VCR 6.0.0

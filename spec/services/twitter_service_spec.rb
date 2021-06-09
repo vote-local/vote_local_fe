@@ -17,10 +17,20 @@ RSpec.describe 'twitter service' do
       # expect(response).to eq("")
     end
 
-    it 'returns tweets that include the representatives twitter handle' do
+    it 'returns tweets that include text with the representatives twitter handle' do
       search = 'jaredpolis'
       response = TwitterService.find_tweets(search)
 
+      expect(response).to be_a(Hash)
+      expect(response[:meta][:result_count]).to eq(10)
+      response[:data].each do |data|
+        expect(data[:text]).to be_a(String)
+      end
+    end
+
+    it 'returns the last 10 tweets from a representatives twitter handle' do
+      twitter_id = '15361570'
+      response = TwitterService.rep_tweets(twitter_id)
       expect(response).to be_a(Hash)
       expect(response[:meta][:result_count]).to eq(10)
       response[:data].each do |data|
@@ -34,6 +44,12 @@ RSpec.describe 'twitter service' do
       search = 'jiridpolis'
       response = TwitterService.find_tweets(search)
       expect(response[:meta][:result_count]).to eq(0)
+    end
+
+    it 'returns error if twitter id is incorrect' do
+      twitter_id = '1'
+      response = TwitterService.rep_tweets(twitter_id)
+      expect(response).to have_key(:errors)
     end
   end
 end
