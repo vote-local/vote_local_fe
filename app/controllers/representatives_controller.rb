@@ -7,17 +7,17 @@ class RepresentativesController < ApplicationController
   end
 
   def show
-    @representatives = RepresentativesFacade.rep(@address, params[:api_id])
+    @representative = RepresentativesFacade.rep(params[:address], params[:id].gsub(/[!@%&".]/,''))
   end
 
   private
 
   def params_address_to_string
     address = ""
-    address += "#{params[:street_address]}" if params[:street_address] != ""
-    address += ", #{params[:city]}" if params[:city]
-    address += ", #{params[:state]}" if params[:state]
-    address += " #{params[:zip_code]}" if params[:zip_code] != ""
+    address += "#{params["address-line"]}" if params['address-line'] != ""
+    address += ", #{params[:city]}"
+    address += ", #{params[:state]}"
+    address += " #{params["postal-code"]}" if params['postal-code'] != ""
 
     return address
   end
