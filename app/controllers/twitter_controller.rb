@@ -9,4 +9,8 @@ class TwitterController < ApplicationController
     TwitterService.follow(twitter_id, user_id)
   end
 
+  def get_tweets
+    relevant_tweets = TwitterService.find_tweets(params[:handle)
+  end
+
 end

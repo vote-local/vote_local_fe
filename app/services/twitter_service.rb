@@ -24,8 +24,12 @@ class TwitterService
     # JSON.parse(response.body, symbolize_names: true)
   end
 
-
+  def self.find_tweets(rep_name)
+    response = conn.get("tweets/search/recent") do |req|
+    req.params['query'] = rep_name
+    end
+    result = JSON.parse(response.body, symbolize_names: true)
+  end
 end
 
 
-# https://api.twitter.com/2/users/by/username/:username

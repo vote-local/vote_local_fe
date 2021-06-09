@@ -21,14 +21,14 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 09 Jun 2021 02:56:57 UTC
+      - Wed, 09 Jun 2021 03:07:14 UTC
       Server:
       - tsa_a
       Set-Cookie:
-      - guest_id=v1%3A162320741771258237; Max-Age=63072000; Expires=Fri, 09 Jun 2023
-        02:56:57 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      - personalization_id="v1_wothk9YuQCrIRlPSdy9MHA=="; Max-Age=63072000; Expires=Fri,
-        09 Jun 2023 02:56:57 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - guest_id=v1%3A162320803477568089; Max-Age=63072000; Expires=Fri, 09 Jun 2023
+        03:07:14 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_xg6Q5D7UtMQ34Q7wlCbDiQ=="; Max-Age=63072000; Expires=Fri,
+        09 Jun 2023 03:07:14 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
@@ -50,13 +50,13 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       X-Rate-Limit-Remaining:
-      - '299'
+      - '298'
       Strict-Transport-Security:
       - max-age=631138519
       X-Connection-Hash:
-      - eecd1fc418e07671e00cb0b2b5cbb4646225b713480b92fed6c381b424a8b8ef
+      - '0138073fc7d781e0ed2e1b105e00d901cfaf580600f753307c820f79188b9727'
     body:
       encoding: ASCII-8BIT
       string: '{"data":{"id":"15361570","name":"Jared Polis","username":"jaredpolis"}}'
-  recorded_at: Wed, 09 Jun 2021 02:56:57 GMT
+  recorded_at: Wed, 09 Jun 2021 03:07:14 GMT
 recorded_with: VCR 6.0.0

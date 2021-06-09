@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.twitter.com/2/users/by/username/jaredpolis
+    uri: https://api.twitter.com/2/tweets/search/recent?query=jiridpolis
     body:
       encoding: US-ASCII
       string: ''
@@ -21,20 +21,20 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 09 Jun 2021 02:56:57 UTC
+      - Wed, 09 Jun 2021 03:07:23 UTC
       Server:
       - tsa_a
       Set-Cookie:
-      - guest_id=v1%3A162320741771258237; Max-Age=63072000; Expires=Fri, 09 Jun 2023
-        02:56:57 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      - personalization_id="v1_wothk9YuQCrIRlPSdy9MHA=="; Max-Age=63072000; Expires=Fri,
-        09 Jun 2023 02:56:57 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - guest_id=v1%3A162320804395898183; Max-Age=63072000; Expires=Fri, 09 Jun 2023
+        03:07:23 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_jcTdgdbe0b0G/2eZMXb2gQ=="; Max-Age=63072000; Expires=Fri,
+        09 Jun 2023 03:07:23 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - no-cache, no-store, max-age=0
       Content-Length:
-      - '84'
+      - '53'
       X-Access-Level:
       - read
       X-Frame-Options:
@@ -42,21 +42,21 @@ http_interactions:
       X-Xss-Protection:
       - '0'
       X-Rate-Limit-Limit:
-      - '300'
+      - '450'
       X-Rate-Limit-Reset:
-      - '1623208317'
+      - '1623208120'
       Content-Disposition:
       - attachment; filename=json.json
       X-Content-Type-Options:
       - nosniff
       X-Rate-Limit-Remaining:
-      - '299'
+      - '442'
       Strict-Transport-Security:
       - max-age=631138519
       X-Connection-Hash:
-      - eecd1fc418e07671e00cb0b2b5cbb4646225b713480b92fed6c381b424a8b8ef
+      - c626e1c0962dba7d2d3e696e0aa8703d5a739fd3ccd23f9e8a4fd1730caf0051
     body:
       encoding: ASCII-8BIT
-      string: '{"data":{"id":"15361570","name":"Jared Polis","username":"jaredpolis"}}'
-  recorded_at: Wed, 09 Jun 2021 02:56:57 GMT
+      string: '{"meta":{"result_count":0}}'
+  recorded_at: Wed, 09 Jun 2021 03:07:23 GMT
 recorded_with: VCR 6.0.0
