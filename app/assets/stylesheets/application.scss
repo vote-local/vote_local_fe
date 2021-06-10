@@ -14,6 +14,10 @@
 
 @import "bootstrap";
 
+.container {
+  display: inline-flex; /* or inline-flex */
+}
+
 
 .dash-section {
   border-bottom: 2px solid black;
@@ -41,4 +45,9 @@
 .tweets {
   float: right;
   text-align: left;
+  padding-left: 200px;
+}
+
+.mb {
+  white-space: nowrap;
 }
