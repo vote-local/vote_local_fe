@@ -15,7 +15,7 @@
 @import "bootstrap";
 
 
-.representatives {
+.dash-section {
   border-bottom: 2px solid black;
   width: 24%;
 }
@@ -32,4 +32,13 @@
 
 .welcome-bottom {
   background:url("https://media.gettyimages.com/videos/capitol-building-washington-district-of-columbia-video-id1158952104?s=640x640");
+}
+
+.reps {
+  text-align: left;
+}
+
+.tweets {
+  float: right;
+  text-align: left;
 }

@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/2/users/1399770258081128450/tweets
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer AAAAAAAAAAAAAAAAAAAAAFYBQQEAAAAAW1YagcoiGVtflujyI5PpTvTH7po%3D0wAQTxkj8IXFcLt6gwdEtsy05GEFvDmMGkr6iOqsb2croUirgS
+      User-Agent:
+      - Faraday v1.4.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '272'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 10 Jun 2021 20:14:46 GMT
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A162335608602617863; Max-Age=63072000; Expires=Sat, 10 Jun 2023
+        20:14:46 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_btN2ydVN+VSEvsRMLGbNUg=="; Max-Age=63072000; Expires=Sat,
+        10 Jun 2023 20:14:46 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Connection-Hash:
+      - 217699d3fc54e2c93f2115f08853245b
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '1500'
+      X-Rate-Limit-Remaining:
+      - '1497'
+      X-Rate-Limit-Reset:
+      - '1623356902'
+      X-Response-Time:
+      - '60'
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"1403080028456308737","text":"Lets learn about our local
+        reps!"},{"id":"1403079918599098372","text":"Created by: Andrew Shafer, Keegan
+        O''Shea, Harrison Blake, and Wyatt Wicks"},{"id":"1403079249859207168","text":"Welcome
+        to Vote Local!"},{"id":"1403078978181558275","text":"Project almost done!"}],"meta":{"oldest_id":"1403078978181558275","newest_id":"1403080028456308737","result_count":4}}'
+  recorded_at: Thu, 10 Jun 2021 20:14:46 GMT
+recorded_with: VCR 6.0.0

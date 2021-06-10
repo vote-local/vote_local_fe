@@ -38,7 +38,7 @@ RSpec.describe 'Election Show Page' do
     expect(page).to have_link(href: "https://www.denvergov.org/content/denvergov/en/mayors-office.html")
   end
 
-  it 'allows user to follow a representative and redirects to dashboard displaying reps name' do
+  it 'allows user to follow a representative and redirects to dashboard displaying reps name', :vcr do
     click_button("Follow")
 
     expect(current_path).to eq("/dashboard")
