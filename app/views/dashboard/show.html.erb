@@ -12,4 +12,11 @@
       <p>Currently not following any Representatives</p>
     <% end %>
   </div>
+
+  <div class="tweets">
+    <% @representative_tweets[:data].each do |tweet| %>
+      <%= tweet[:text]  %> <br>
+    <% end %>
+  </div>
+
 </div>
