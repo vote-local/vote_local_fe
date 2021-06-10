@@ -7,12 +7,5 @@ class TwitterFacade
       twitter_id = TwitterService.representative_twitter_id(twitter_handle)
       tweets = TwitterService.rep_tweets(twitter_id)
     end
-    # if twitter_id !=nil
-    #   x = TwitterService.rep_tweets(twitter_id)
-    # else
-    #   x = {"data": []}
-    # end
-    #
-    # return x
   end
 end
