@@ -44,4 +44,22 @@ RSpec.describe 'Election Show Page' do
     expect(current_path).to eq("/dashboard")
     expect(page).to have_content("Michael Hancock")
   end
+
+  it 'allows user to unfollow a representative and redirects to dashboard without the reps name', :vcr do
+    click_button("Follow")
+    visit '/search'
+
+    fill_in 'postal-code', with: '80203'
+    fill_in 'city', with: 'Denver'
+    select 'Colorado', from: "state"
+    fill_in 'address-line', with: '901 N Sherman Street'
+    click_button 'Submit'
+
+    click_link("Michael Hancock")
+    click_button("Unfollow")
+
+    expect(current_path).to eq("/dashboard")
+  
+    expect(page).to have_content("Michael Hancock")
+  end
 end
