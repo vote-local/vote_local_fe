@@ -3,8 +3,10 @@ Rails.application.routes.draw do
 
   get '/auth/twitter/callback', to: 'sessions#create'
 
+  # resources :dashboard, only: [:show, :create, :delete]
   get '/dashboard', to: 'dashboard#show'
   post '/dashboard', to: 'dashboard#create'
+  delete '/dashboard', to: 'dashboard#destroy'
 
   get '/search', to: 'search#search'
 
