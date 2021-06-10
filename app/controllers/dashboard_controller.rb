@@ -5,7 +5,6 @@ class DashboardController < ApplicationController
 
   def show
     if !current_user.twitter_reps.empty?
-      require "pry"; binding.pry
       @twt_handle = current_user.twitter_reps.first.twitter
       # twitter_id = TwitterService.representative_twitter_id(twt_handle)
       # @representative_tweets = TwitterService.rep_tweets(twitter_id)
@@ -27,12 +26,12 @@ class DashboardController < ApplicationController
     twitter_rep = TwitterRep.find_by(api_id: params[:api_id])
     twitter_rep.destroy
     redirect_to dashboard_path
-    
+
   end
 
   private
 
   def rep_params
-    params.permit(:name, :api_id, :twitter)
+    params.permit(:name, :api_id, :twitter, :zip_code)
   end
 end

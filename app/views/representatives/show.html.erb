@@ -10,7 +10,7 @@
                 <h4><%= @representative.name %></h4>
                 <p class="text-muted font-size-sm"><%= @representative.office_name %></p>
                 <% if !current_user.twitter_reps.find_by(api_id: @representative.api_id) %>
-                <%= button_to "Follow", dashboard_path(api_id: @representative.api_id, name: @representative.name, twitter: @representative.twitter_handle), :class => "btn btn-primary btn-lg" %>
+                <%= button_to "Follow", dashboard_path(api_id: @representative.api_id, name: @representative.name, twitter: @representative.twitter_handle, zip_code: @representative.zip_code), :class => "btn btn-primary btn-lg" %>
                 <% else %>
                 <%= button_to "Unfollow", dashboard_path(api_id: @representative.api_id, name: @representative.name, twitter: @representative.twitter_handle), method: :delete %>
                 <% end %>
