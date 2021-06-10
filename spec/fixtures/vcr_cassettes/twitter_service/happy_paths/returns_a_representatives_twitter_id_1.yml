@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer AAAAAAAAAAAAAAAAAAAAAFYBQQEAAAAACiSDxe%2BxOGYIKX%2BaZ6uDJmvu%2BiI%3DGXPwziMrc5NqPR88Khnv1iSDEeXRUn3Ljwx7MvCVzthmUr6E8Y
+      - Bearer AAAAAAAAAAAAAAAAAAAAAFYBQQEAAAAAW1YagcoiGVtflujyI5PpTvTH7po%3D0wAQTxkj8IXFcLt6gwdEtsy05GEFvDmMGkr6iOqsb2croUirgS
       User-Agent:
       - Faraday v1.4.2
       Accept-Encoding:
@@ -20,45 +20,43 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache, no-store, max-age=0
-      Content-Disposition:
-      - attachment; filename=json.json
-      Content-Length:
-      - '84'
-      Content-Type:
-      - application/json; charset=utf-8
       Date:
-      - Thu, 10 Jun 2021 03:16:13 GMT
+      - Thu, 10 Jun 2021 23:07:08 UTC
       Server:
       - tsa_b
       Set-Cookie:
-      - guest_id=v1%3A162329497319183324; Max-Age=63072000; Expires=Sat, 10 Jun 2023
-        03:16:13 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      - personalization_id="v1_ptE+yrt6H0YIkTZ8TXdWKQ=="; Max-Age=63072000; Expires=Sat,
-        10 Jun 2023 03:16:13 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      Strict-Transport-Security:
-      - max-age=631138519
+      - guest_id=v1%3A162336642883580227; Max-Age=63072000; Expires=Sat, 10 Jun 2023
+        23:07:08 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_2stujQswPUE8cwVp8O+0qw=="; Max-Age=63072000; Expires=Sat,
+        10 Jun 2023 23:07:08 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Content-Length:
+      - '84'
       X-Access-Level:
       - read
-      X-Connection-Hash:
-      - 192598c58fa5f03561daade61feb62c9
-      X-Content-Type-Options:
-      - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Rate-Limit-Limit:
-      - '300'
-      X-Rate-Limit-Remaining:
-      - '294'
-      X-Rate-Limit-Reset:
-      - '1623295106'
-      X-Response-Time:
-      - '31'
       X-Xss-Protection:
       - '0'
+      X-Rate-Limit-Limit:
+      - '300'
+      X-Rate-Limit-Reset:
+      - '1623367298'
+      Content-Disposition:
+      - attachment; filename=json.json
+      X-Content-Type-Options:
+      - nosniff
+      X-Rate-Limit-Remaining:
+      - '292'
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Connection-Hash:
+      - afbf8f3db93a7a5a5318530719e0d5f2c0d07cdedef74dd486e153103bbf56fd
     body:
       encoding: ASCII-8BIT
       string: '{"data":{"id":"15361570","name":"Jared Polis","username":"jaredpolis"}}'
-  recorded_at: Thu, 10 Jun 2021 03:16:13 GMT
+  recorded_at: Thu, 10 Jun 2021 23:07:08 GMT
 recorded_with: VCR 6.0.0

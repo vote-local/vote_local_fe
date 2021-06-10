@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class WelcomeController < ApplicationController
   before_action :disable_nav
 

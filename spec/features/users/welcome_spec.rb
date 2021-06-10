@@ -30,7 +30,7 @@ RSpec.describe 'Welcome Page' do
     end
 
     describe 'when the twitter login button is clicked ' do
-      it 'creates the user using omniauth hash info' do
+      it 'creates the user using omniauth hash info', :vcr do
         click_on 'Login with Twitter'
 
         user = User.find_by(uid: @auth_hash[:uid])
@@ -39,7 +39,7 @@ RSpec.describe 'Welcome Page' do
         expect(user.username).to eq(@auth_hash[:info][:nickname])
       end
 
-      it 'redirects the user to thier personalized dashboard and displays their username' do
+      it 'redirects the user to thier personalized dashboard and displays their username', :vcr do
         click_on 'Login with Twitter'
 
         expect(current_path).to eq('/dashboard')

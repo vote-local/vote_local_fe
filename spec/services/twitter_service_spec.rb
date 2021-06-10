@@ -13,8 +13,6 @@ RSpec.describe 'twitter service' do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
 
       response = TwitterService.follow('15361570', '1399770258081128450')
-
-      # expect(response).to eq("")
     end
 
     xit 'returns tweets that include text with the representatives twitter handle' do

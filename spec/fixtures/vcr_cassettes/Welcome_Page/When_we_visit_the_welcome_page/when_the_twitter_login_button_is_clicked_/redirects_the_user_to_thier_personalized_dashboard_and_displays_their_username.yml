@@ -20,48 +20,46 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - no-cache, no-store, max-age=0
-      Content-Disposition:
-      - attachment; filename=json.json
-      Content-Length:
-      - '272'
-      Content-Type:
-      - application/json; charset=utf-8
       Date:
-      - Thu, 10 Jun 2021 23:07:08 GMT
+      - Thu, 10 Jun 2021 23:08:30 UTC
       Server:
       - tsa_b
       Set-Cookie:
-      - guest_id=v1%3A162336642846331340; Max-Age=63072000; Expires=Sat, 10 Jun 2023
-        23:07:08 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      - personalization_id="v1_cU0TzupNJbe4o7n3TbouIQ=="; Max-Age=63072000; Expires=Sat,
-        10 Jun 2023 23:07:08 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      Strict-Transport-Security:
-      - max-age=631138519
+      - guest_id=v1%3A162336651026093044; Max-Age=63072000; Expires=Sat, 10 Jun 2023
+        23:08:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_IhvtjFuNX6QGFaJxe14r9w=="; Max-Age=63072000; Expires=Sat,
+        10 Jun 2023 23:08:30 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache, no-store, max-age=0
+      Content-Length:
+      - '272'
       X-Access-Level:
       - read
-      X-Connection-Hash:
-      - 3ae679b19612fe8bd20b1b3f28555198
-      X-Content-Type-Options:
-      - nosniff
       X-Frame-Options:
       - SAMEORIGIN
-      X-Rate-Limit-Limit:
-      - '1500'
-      X-Rate-Limit-Remaining:
-      - '1488'
-      X-Rate-Limit-Reset:
-      - '1623367253'
-      X-Response-Time:
-      - '73'
       X-Xss-Protection:
       - '0'
+      X-Rate-Limit-Limit:
+      - '1500'
+      X-Rate-Limit-Reset:
+      - '1623367253'
+      Content-Disposition:
+      - attachment; filename=json.json
+      X-Content-Type-Options:
+      - nosniff
+      X-Rate-Limit-Remaining:
+      - '1484'
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Connection-Hash:
+      - 813b7740b891a03cb237115094dc9becf5ecbce4090c5b5475c4ced915756fd4
     body:
       encoding: ASCII-8BIT
       string: '{"data":[{"id":"1403080028456308737","text":"Lets learn about our local
         reps!"},{"id":"1403079918599098372","text":"Created by: Andrew Shafer, Keegan
         O''Shea, Harrison Blake, and Wyatt Wicks"},{"id":"1403079249859207168","text":"Welcome
         to Vote Local!"},{"id":"1403078978181558275","text":"Project almost done!"}],"meta":{"oldest_id":"1403078978181558275","newest_id":"1403080028456308737","result_count":4}}'
-  recorded_at: Thu, 10 Jun 2021 23:07:08 GMT
+  recorded_at: Thu, 10 Jun 2021 23:08:30 GMT
 recorded_with: VCR 6.0.0

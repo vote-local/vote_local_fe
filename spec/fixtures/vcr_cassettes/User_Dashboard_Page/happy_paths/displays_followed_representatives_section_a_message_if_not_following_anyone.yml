@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.twitter.com/2/users/1/tweets
+    uri: https://api.twitter.com/2/users/1399770258081128450/tweets
     body:
       encoding: US-ASCII
       string: ''
@@ -25,24 +25,24 @@ http_interactions:
       Content-Disposition:
       - attachment; filename=json.json
       Content-Length:
-      - '180'
+      - '272'
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 10 Jun 2021 23:07:09 GMT
+      - Thu, 10 Jun 2021 23:07:07 GMT
       Server:
       - tsa_b
       Set-Cookie:
-      - guest_id=v1%3A162336642930944076; Max-Age=63072000; Expires=Sat, 10 Jun 2023
-        23:07:09 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      - personalization_id="v1_imQAf42BMe9OLLq9NLshRA=="; Max-Age=63072000; Expires=Sat,
-        10 Jun 2023 23:07:09 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - guest_id=v1%3A162336642703984358; Max-Age=63072000; Expires=Sat, 10 Jun 2023
+        23:07:07 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_lC8fajNELNo04O7w2H+ZAg=="; Max-Age=63072000; Expires=Sat,
+        10 Jun 2023 23:07:07 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=631138519
       X-Access-Level:
       - read
       X-Connection-Hash:
-      - b3c550a77e292105b7b8d727eea6b7e2
+      - 92a4541a8b927ea618cda1ca159151d5
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -50,16 +50,18 @@ http_interactions:
       X-Rate-Limit-Limit:
       - '1500'
       X-Rate-Limit-Remaining:
-      - '1486'
+      - '1491'
       X-Rate-Limit-Reset:
       - '1623367253'
       X-Response-Time:
-      - '22'
+      - '70'
       X-Xss-Protection:
       - '0'
     body:
       encoding: ASCII-8BIT
-      string: '{"errors":[{"value":"1","detail":"Could not find user with id: [1].","title":"Not
-        Found Error","resource_type":"user","parameter":"id","resource_id":"1","type":"https://api.twitter.com/2/problems/resource-not-found"}]}'
-  recorded_at: Thu, 10 Jun 2021 23:07:09 GMT
+      string: '{"data":[{"id":"1403080028456308737","text":"Lets learn about our local
+        reps!"},{"id":"1403079918599098372","text":"Created by: Andrew Shafer, Keegan
+        O''Shea, Harrison Blake, and Wyatt Wicks"},{"id":"1403079249859207168","text":"Welcome
+        to Vote Local!"},{"id":"1403078978181558275","text":"Project almost done!"}],"meta":{"oldest_id":"1403078978181558275","newest_id":"1403080028456308737","result_count":4}}'
+  recorded_at: Thu, 10 Jun 2021 23:07:07 GMT
 recorded_with: VCR 6.0.0

@@ -7,10 +7,10 @@
       <h4 class="mb">Followed Representatives </h4>
 
     <% if current_user.twitter_reps.empty? %>
-    <p>Currently not following any Representatives</p>
+      <p>Currently not following any Representatives</p>
     <% else %>
       <h6><% current_user.twitter_reps.each do |twitter_rep| %></h6>
-        <%= link_to twitter_rep.name, representative_path(id: twitter_rep.api_id, address: twitter_rep.zip_code)  %> <br>
+          <%= link_to twitter_rep.name, representative_path(id: twitter_rep.api_id, address: twitter_rep.zip_code)  %> <br>
         <% end %>
       </div>
       <% end %>
@@ -37,5 +37,5 @@
       	  </ul>
       	</div>
       </div>
- </div>
+   </div>
 </div>
