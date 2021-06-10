@@ -1,25 +1,41 @@
 <div class="jumbotron">
   <h2>Welcome to Vote Local <%= current_user.username %>!</h2> <br>
 
+  <div class="container">
   <div class= 'reps'>
-    <h3 class="dash-section" >Followed Representatives </h3>
+
+      <h4 class="mb">Followed Representatives </h4>
 
     <% if current_user.twitter_reps.empty? %>
     <p>Currently not following any Representatives</p>
     <% else %>
-      <% current_user.twitter_reps.each do |twitter_rep| %>
-        <%= twitter_rep.name  %> <br>
+      <h6><% current_user.twitter_reps.each do |twitter_rep| %></h6>
+        <%= link_to twitter_rep.name, representative_path(id: twitter_rep.api_id, address: twitter_rep.zip_code)  %> <br>
         <% end %>
-  </div>
-
-
-  <div class="tweets">
-    <h3 class="dash-section" >Twitter Feed </h3>
-
-    <% @representative_tweets[:data].each do |tweet| %>
-      <%= tweet[:text]  %> <br>
-    <% end %>
-  </div>
-
-  <% end %>
+      </div>
+      <% end %>
+<div class ="tweets">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <div class="row">
+      <div class="col-xs-12 col-md-4 col-lg-10 bootstrap snippets bootdeys">
+      	  <div class="panel-body">
+      	    <h4 class="mb">Twitter Feed
+      	      <i class="fa fa-twitter text-info pull-right"></i>
+      	    </h4>
+      	    <hr>
+      	    <ul class="list-table">
+      	      <ul class="text-left">
+      	        <h5 class="semibold ellipsis nm"><%= current_user.twitter_reps.name %></h5>
+             </ul>
+      	  </div>
+      	  <ul class="list-group">
+              <% @representative_tweets[:data].each do |tweet| %>
+              <li class="list-group-item">
+              <p class="nm">  <%= tweet[:text]  %> <br> </p>
+            </li>
+              <% end %>
+      	  </ul>
+      	</div>
+      </div>
+ </div>
 </div>

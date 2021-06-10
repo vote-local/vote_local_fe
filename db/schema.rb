@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2021_06_08_215845) do
     t.string "name"
     t.string "api_id"
     t.string "twitter"
+    t.string "zip_code"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

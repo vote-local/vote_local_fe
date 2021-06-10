@@ -4,6 +4,7 @@ class CreateTwitterReps < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :api_id
       t.string :twitter
+      t.string :zip_code
       t.references :user, foreign_key: true
 
       t.timestamps
