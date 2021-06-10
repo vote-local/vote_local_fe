@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>VoteLocalFe</title>
-    <%= render partial: '/partials/nav_bar.html.erb' %>
+    <%= render partial: '/partials/nav_bar.html.erb' unless @disable_nav %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
