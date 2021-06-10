@@ -21,14 +21,14 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 09 Jun 2021 23:58:02 UTC
+      - Thu, 10 Jun 2021 03:16:12 UTC
       Server:
-      - tsa_a
+      - tsa_b
       Set-Cookie:
-      - guest_id=v1%3A162328308237895646; Max-Age=63072000; Expires=Fri, 09 Jun 2023
-        23:58:02 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      - personalization_id="v1_+cnfWrMqMnOMFFAIZv3hAA=="; Max-Age=63072000; Expires=Fri,
-        09 Jun 2023 23:58:02 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - guest_id=v1%3A162329497214730665; Max-Age=63072000; Expires=Sat, 10 Jun 2023
+        03:16:12 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_0d4OOLMJ17znxw4vE6hRmg=="; Max-Age=63072000; Expires=Sat,
+        10 Jun 2023 03:16:12 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
@@ -44,20 +44,20 @@ http_interactions:
       X-Rate-Limit-Limit:
       - '300'
       X-Rate-Limit-Reset:
-      - '1623283982'
+      - '1623295106'
       Content-Disposition:
       - attachment; filename=json.json
       X-Content-Type-Options:
       - nosniff
       X-Rate-Limit-Remaining:
-      - '299'
+      - '296'
       Strict-Transport-Security:
       - max-age=631138519
       X-Connection-Hash:
-      - 186ca9b8ddd91cf3c698ed0fb61d108cfc3ffc4e9148f733d426c7cac0d85e61
+      - 82fe2450fd4ec60815ba6be0238be9f7ea66eeab3879a60c3721bfedc268b365
     body:
       encoding: ASCII-8BIT
       string: '{"errors":[{"value":"testnametwitter","detail":"Could not find user
         with username: [testnametwitter].","title":"Not Found Error","resource_type":"user","parameter":"username","resource_id":"testnametwitter","type":"https://api.twitter.com/2/problems/resource-not-found"}]}'
-  recorded_at: Wed, 09 Jun 2021 23:58:02 GMT
+  recorded_at: Thu, 10 Jun 2021 03:16:12 GMT
 recorded_with: VCR 6.0.0

@@ -9,6 +9,8 @@ class TwitterService
     response = conn.get("users/by/username/#{handle}")
     result = JSON.parse(response.body, symbolize_names: true)
     id = result[:data][:id]
+    rescue NoMethodError
+      nil
   end
 
   # def self.follow(twitter_id, user_id)

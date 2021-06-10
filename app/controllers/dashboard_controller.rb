@@ -6,8 +6,9 @@ class DashboardController < ApplicationController
   def show
     if !current_user.twitter_reps.empty?
       twt_handle = current_user.twitter_reps.first.twitter
-      twitter_id = TwitterService.representative_twitter_id(twt_handle)
-      @representative_tweets = TwitterService.rep_tweets(twitter_id)
+      # twitter_id = TwitterService.representative_twitter_id(twt_handle)
+      # @representative_tweets = TwitterService.rep_tweets(twitter_id)
+      @representative_tweets = TwitterFacade.representative_tweets(twt_handle)
     end
   end
 

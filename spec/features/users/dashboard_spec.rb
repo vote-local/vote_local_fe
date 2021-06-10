@@ -63,8 +63,6 @@ RSpec.describe 'User Dashboard Page', :vcr do
 
       visit '/dashboard'
 
-      save_and_open_page
-
       expect(page).to have_content("Big news, Denver! 70% of our eligible residents age 12 and older have received at least one dose of the COVID-19 vaccine. This puts us ahead of the @POTUS July 4th deadline. Congrats Mile High City! If you haven’t been vaccinated - you still can! 💉 https://t.co/htaY9a7z3p")
       expect(page).to have_content("It's that time of year again! Denver's pools are reopening. 😎🏊🏾‍♂️ @denverparksrec @CityofDenver https://t.co/TmCUXRhTqa")
     end
@@ -72,6 +70,7 @@ RSpec.describe 'User Dashboard Page', :vcr do
   end
 
   describe 'sad paths ' do
+
     it 'dispays 404 if user is not loged in' do
       visit '/search'
 

@@ -20,43 +20,45 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Wed, 09 Jun 2021 03:30:29 UTC
-      Server:
-      - tsa_a
-      Set-Cookie:
-      - guest_id=v1%3A162320942922963238; Max-Age=63072000; Expires=Fri, 09 Jun 2023
-        03:30:29 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      - personalization_id="v1_d9spbCUkUU97BMi6HH/FWw=="; Max-Age=63072000; Expires=Fri,
-        09 Jun 2023 03:30:29 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
-      Content-Type:
-      - application/json; charset=utf-8
       Cache-Control:
       - no-cache, no-store, max-age=0
-      Content-Length:
-      - '84'
-      X-Access-Level:
-      - read
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Rate-Limit-Limit:
-      - '300'
-      X-Rate-Limit-Reset:
-      - '1623209817'
       Content-Disposition:
       - attachment; filename=json.json
-      X-Content-Type-Options:
-      - nosniff
-      X-Rate-Limit-Remaining:
-      - '294'
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 10 Jun 2021 03:16:13 GMT
+      Server:
+      - tsa_b
+      Set-Cookie:
+      - guest_id=v1%3A162329497319183324; Max-Age=63072000; Expires=Sat, 10 Jun 2023
+        03:16:13 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+      - personalization_id="v1_ptE+yrt6H0YIkTZ8TXdWKQ=="; Max-Age=63072000; Expires=Sat,
+        10 Jun 2023 03:16:13 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
       Strict-Transport-Security:
       - max-age=631138519
+      X-Access-Level:
+      - read
       X-Connection-Hash:
-      - afa9d796444fec287dce333cffe6d7ae90becfd097e6383fbf5ab7d8af3d0e39
+      - 192598c58fa5f03561daade61feb62c9
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '300'
+      X-Rate-Limit-Remaining:
+      - '294'
+      X-Rate-Limit-Reset:
+      - '1623295106'
+      X-Response-Time:
+      - '31'
+      X-Xss-Protection:
+      - '0'
     body:
       encoding: ASCII-8BIT
       string: '{"data":{"id":"15361570","name":"Jared Polis","username":"jaredpolis"}}'
-  recorded_at: Wed, 09 Jun 2021 03:30:29 GMT
+  recorded_at: Thu, 10 Jun 2021 03:16:13 GMT
 recorded_with: VCR 6.0.0

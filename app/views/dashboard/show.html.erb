@@ -4,14 +4,14 @@
   <div>
     <h3 class="representatives" >Followed Representatives </h3>
 
-    <% if !current_user.twitter_reps.empty? %>
+    <% if current_user.twitter_reps.empty? %>
+    <p>Currently not following any Representatives</p>
+    <% else %>
       <% current_user.twitter_reps.each do |twitter_rep| %>
         <%= twitter_rep.name  %> <br>
         <% end %>
-    <% else %>
-      <p>Currently not following any Representatives</p>
-    <% end %>
   </div>
+
 
   <div class="tweets">
     <% @representative_tweets[:data].each do |tweet| %>
@@ -19,4 +19,5 @@
     <% end %>
   </div>
 
+  <% end %>
 </div>
