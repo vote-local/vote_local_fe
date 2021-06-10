@@ -21,6 +21,13 @@ class DashboardController < ApplicationController
     redirect_to dashboard_path
   end
 
+  def destroy
+    twitter_rep = TwitterRep.find_by(api_id: params[:api_id])
+    twitter_rep.destroy
+    redirect_to dashboard_path
+    
+  end
+
   private
 
   def rep_params
