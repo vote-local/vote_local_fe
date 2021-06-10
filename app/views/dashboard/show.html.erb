@@ -1,8 +1,8 @@
 <div class="jumbotron">
   <h2>Welcome to Vote Local <%= current_user.username %>!</h2> <br>
 
-  <div>
-    <h3 class="representatives" >Followed Representatives </h3>
+  <div class= 'reps'>
+    <h3 class="dash-section" >Followed Representatives </h3>
 
     <% if current_user.twitter_reps.empty? %>
     <p>Currently not following any Representatives</p>
@@ -14,6 +14,8 @@
 
 
   <div class="tweets">
+    <h3 class="dash-section" >Twitter Feed </h3>
+
     <% @representative_tweets[:data].each do |tweet| %>
       <%= tweet[:text]  %> <br>
     <% end %>
