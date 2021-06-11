@@ -37,5 +37,8 @@ https://user-images.githubusercontent.com/24997456/121624825-7e874500-ca2f-11eb-
 - Response Caching: VCR & Webmock
 - Test Coverage: SimpleCov
 
+## Twitter Representative and User DB
+![Vote_Local_DB](https://user-images.githubusercontent.com/24997456/121722496-bed3db00-caa2-11eb-8887-8ab7b3b25643.jpg)
+
 ## Back End API Service
 https://github.com/vote-local/vote_local_be
