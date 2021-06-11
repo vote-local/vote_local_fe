@@ -29,7 +29,7 @@ class DashboardController < ApplicationController
 
   private
 
-  def rep_params
-    params.permit(:name, :api_id, :twitter, :zip_code)
-  end
+  # def rep_params
+  #   params.permit(:name, :api_id, :twitter, :zip_code)
+  # end
 end
