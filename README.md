@@ -1,4 +1,4 @@
-## What you Vote Local has to offer:
+## What Vote Local has to offer:
 While the nation pays attention to the big elections every 4 years, it’s not always easy to keep track of what is happening closer to home. Vote Local lets you keep track of some basic information to keep yourself informed about who your representatives are. With this app you can enter your address to find information on your local representatives. You can also use this app to check the tweets of your representatives and see what they are up to.
 
 ## Video Walkthrough
